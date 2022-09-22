@@ -22,6 +22,7 @@ class DatabaseConverter {
         return stringBuilder.toString()
     }
 
+    @TypeConverter
     fun convertToStringToList(string: String):List<String>{
         return string.split(separator)  //split method convert it to a list after removing the commas. split return List<String>
     }
